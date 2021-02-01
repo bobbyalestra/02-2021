@@ -1,18 +1,12 @@
 
 
-// when having an object with more than one method create a "blue print";
+// when having an object with more than one method create a "blue print to create objects of that type";
 
-
-const person = {
-    name : 'Bobby',
-    walk() {
-        console.log(walk);
+class Person {
+    constructor(name) {
+        this.name = name
     }
-};
-
-const person2 = {
-    name : 'Bobby',
     walk() {
-        console.log(walk);
-    }
-};
+    console.log(walk);
+}
+}
