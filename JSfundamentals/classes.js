@@ -10,3 +10,8 @@ class Person {
     console.log(walk);
 }
 }
+
+// to create an object using the class or "blueprint" you must define it as "new"
+// use the new Person (parameter) to add the new constructor
+const person = new Person('Bobby');
+person.walk
