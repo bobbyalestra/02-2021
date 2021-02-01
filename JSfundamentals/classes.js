@@ -7,4 +7,4 @@ const person = {
     walk() {
         console.log(walk);
     }
-}
+};
