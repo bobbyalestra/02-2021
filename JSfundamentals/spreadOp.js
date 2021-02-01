@@ -10,7 +10,11 @@
 
 
 // able to spread objects
-const first = {name : 'Bobby'};
-const seconf = {job : "Programmer"};
 
-const combined = {...first, ...second}
+// able to add more elements
+const first = {name : 'Bobby'};
+const second = {job : "Programmer"};
+
+const combined = {...first, ...second, location : 'NFAL'}
+
+console.log(combined)
