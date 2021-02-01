@@ -22,3 +22,14 @@ const address = {
 
 
 const {street, city, country} = address
+
+// can add an alias using street: st
+const address = {
+    city : '',
+    street: '',
+    country: ''
+}
+
+
+
+const {street: st} = address
