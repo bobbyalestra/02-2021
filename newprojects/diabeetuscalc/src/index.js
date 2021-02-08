@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Forms from './components/Forms';
+import CarbCover from './components/CarbCover/CarbCover';
 import CarbCorrect from './components/CarbCorrect/CarbCorrect';
 
 
@@ -11,8 +11,8 @@ import CarbCorrect from './components/CarbCorrect/CarbCorrect';
 ReactDOM.render(
   <React.StrictMode>
       <CarbCorrect />
- 
-    <Forms />  
+  <CarbCover />
+   
     <App />
 
   </React.StrictMode>,

@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-class Forms extends React.Component {
+class CarbCover extends React.Component {
 
     render () {
         return (
@@ -14,4 +14,4 @@ class Forms extends React.Component {
     }
 }
 
-export default Forms;
+export default CarbCover;
