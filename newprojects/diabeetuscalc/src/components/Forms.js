@@ -7,7 +7,7 @@ class Forms extends React.Component {
         return (
             <form>
                 <label htmlFor='CarbCover'>Carb Cover</label>
-                <input type="text" name="CarbCover" id="carbCover"/>
+                <input type="number" name="CarbCover" id="carbCover"/>
                 <button>Cover Carbs</button>
             </form>
         )
