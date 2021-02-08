@@ -1,5 +1,0 @@
-
-
-
-const carbCover;
-const currentCarbInput
