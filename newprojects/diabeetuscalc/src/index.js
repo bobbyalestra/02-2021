@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Forms from './Forms';
+import Forms from './components/Forms';
 
 
 
