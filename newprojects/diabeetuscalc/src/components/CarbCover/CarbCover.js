@@ -9,6 +9,7 @@ class CarbCover extends React.Component {
                 <label htmlFor='CarbCover'>Carb Cover</label>
                 <input type="number" name="CarbCover" id="carbCover"/>
                 <button>Cover Carbs</button>
+            
             </form>
         )
     }

@@ -5,13 +5,29 @@ class CarbCorrect extends React.Component {
 
     render () {
         return (
-            <form>
-                <label htmlFor='carbCorrect'>Carb Correction</label>
-                <input type="number" name="Carbinput" id="CarbCorrect"/>
-                <button id='CarbCorrectButton'>Cover Carbs</button>
-            </form>
-        )
-    }
-}
 
+       
+                <div>
+                
+                <label htmlFor='CarbCover'>Carb Cover</label>
+                <input type="number" name="CarbCover" id="carbCover"/>
+                <button>Carb Correction</button>
+            
+
+           
+       
+
+                </div>
+
+                    );
+}   
+                
+                         
+                      
+}
 export default CarbCorrect;
+
+
+
+
+

@@ -5,6 +5,7 @@
         border-radius:50px 50px 50px 50px;
         box-sizing: border-box;
         text-decoration:none;
+       font-weight: bold;
         font-family:'Roboto',sans-serif;
         color:red;
         background-color:blue;
