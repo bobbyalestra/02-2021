@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Forms from './components/Forms';
-import carbCorrect from './components/CarbCorrect';
-import Carbinput from './components/CarbCorrect';
+import CarbCorrect from './components/CarbCorrect';
+import './components/CarbCorrect.css'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-      <carbCorrect />
-    <Carbinput />
+      <CarbCorrect />
+ 
     <Forms />  
     <App />
 

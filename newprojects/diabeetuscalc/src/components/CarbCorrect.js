@@ -1,16 +1,17 @@
 import React from 'react';
-
-class Carbinput extends React.Component {
+import './CarbCorrect.css';
+import './CarbCorrectButton.css';
+class CarbCorrect extends React.Component {
 
     render () {
         return (
             <form>
                 <label htmlFor='carbCorrect'>Carb Correction</label>
-                <input type="number" name="Carbinput" id="Carbinput"/>
-                <button>Cover Carbs</button>
+                <input type="number" name="Carbinput" id="CarbCorrect"/>
+                <button id='CarbCorrectButton'>Cover Carbs</button>
             </form>
         )
     }
 }
 
-export default Carbinput;
+export default CarbCorrect;
