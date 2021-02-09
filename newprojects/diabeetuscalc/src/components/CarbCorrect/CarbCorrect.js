@@ -8,25 +8,19 @@ class CarbCorrect extends React.Component {
         return (
 
        
-                <div>
-                
+                <div id='CarbCorrectDiv'>
+
                 <label id ='CarbCorrectLabel' htmlFor='CarbCorrectLabel'>Carb Correction</label>
-                <input type="number" name="CarbCover" id="CarbCorrectButton"/>
-                <button id='CarbCorrectButton'>Carb Correction</button>
+                <input className = "CarbCorrect" type="number" name="CarbCover" id="CarbCorrectButton"  defaultValue={this.props.children}/>
+                <button onClick={console.log('hello')} id='CarbCorrectButton'>Carb Correction</button>
             
-
-           
-       
-
                 </div>
 
-                    );
-}   
-                
-                         
-                      
+             );
+            }
 }
-export default CarbCorrect;
+export default CarbCorrect;  
+
 
 
 

@@ -10,9 +10,8 @@ import CarbCorrect from './components/CarbCorrect/CarbCorrect';
 
 ReactDOM.render(
   <React.StrictMode>
-      <CarbCorrect />
-  <CarbCover />
-   
+    <CarbCorrect />
+    <CarbCover />
     <App />
 
   </React.StrictMode>,
