@@ -1,6 +1,7 @@
 import React from 'react';
 import './CarbCorrect.css';
 import './CarbCorrectButton.css';
+import './CarbCorrectLabel.css';
 class CarbCorrect extends React.Component {
 
     render () {
@@ -9,9 +10,9 @@ class CarbCorrect extends React.Component {
        
                 <div>
                 
-                <label htmlFor='CarbCover'>Carb Cover</label>
-                <input type="number" name="CarbCover" id="carbCover"/>
-                <button>Carb Correction</button>
+                <label id ='CarbCorrectLabel' htmlFor='CarbCorrectLabel'>Carb Correction</label>
+                <input type="number" name="CarbCover" id="CarbCorrectButton"/>
+                <button id='CarbCorrectButton'>Carb Correction</button>
             
 
            
