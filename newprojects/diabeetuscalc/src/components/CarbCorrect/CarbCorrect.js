@@ -3,7 +3,13 @@ import './CarbCorrect.css';
 import './CarbCorrectButton.css';
 import './CarbCorrectLabel.css';
 class CarbCorrect extends React.Component {
+    targets = document.getElementById('CarbCorrectButton');
+    
 
+
+     
+        
+    
     render () {
         return (
 
@@ -12,17 +18,20 @@ class CarbCorrect extends React.Component {
 
                 <label id ='CarbCorrectLabel' htmlFor='CarbCorrectLabel'>Carb Correction</label>
                 <input className = "CarbCorrect" type="number" name="CarbCover" id="CarbCorrectButton"  defaultValue={this.props.children}/>
-                <button onClick={console.log('hello')} id='CarbCorrectButton'>Carb Correction</button>
+               
+                <button id="submit" onclick='addlist()'/>
             
-                </div>
 
+
+                </div>
+            
              );
+                return 
             }
 }
+
+
 export default CarbCorrect;  
-
-
-
 
 
 
