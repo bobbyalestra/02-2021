@@ -53,3 +53,8 @@ print(min(4,6))
 # if you have a decimal that you ant to round use thew round function
 
 print(round(3.546))
+
+
+# to use the floor method you have to import the math functions.....see line 2
+
+print(floor(3.7))
