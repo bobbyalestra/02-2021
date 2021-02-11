@@ -28,6 +28,6 @@ print(str(my_num) + " iss my favorite number" )
 # abs stands for absolute value . the abouslute value of negative 5 is 5
 print(abs(my_num))
 
-# to raise a numebr to an exponent use the pow function
+# to raise a numebr to an exponent use the pow function first parameter is the number you want to use the power to , sencond si the power numebr
 
-print(pow(my_num))
+print(pow(3,2))
