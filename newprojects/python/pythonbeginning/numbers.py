@@ -35,3 +35,7 @@ print(pow(4,6))
 
 # the max function will tell you the highest number
 print(max(4,6))
+
+# the min is the same
+
+print(min(4,6))
