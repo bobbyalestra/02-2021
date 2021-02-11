@@ -18,9 +18,12 @@ print(10 % 3)
 
 
 # how to add a num variable
-my_num = 5
+my_num = -5
 print(my_num)
 
 #convert number to string ... to concat to a string you have to convert the number to a string first with str
 
 print(str(my_num) + " iss my favorite number" )
+
+
+print(abs(my_num))
