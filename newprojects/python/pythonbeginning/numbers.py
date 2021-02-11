@@ -39,3 +39,8 @@ print(max(4,6))
 # the min is the same
 
 print(min(4,6))
+
+
+# if you have a decimal that you ant to round use thew round function
+
+print(round(3.546))
