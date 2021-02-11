@@ -1,4 +1,12 @@
 
+# in able to use these function you have to import python
+# this will grab a bunch of math function that  mathw can use
+
+from math import *
+
+
+
+
 
 # can use decimal and negative numebrs as well
 
