@@ -1,6 +1,7 @@
 
 # in able to use these function you have to import python
 # this will grab a bunch of math function that  mathw can use
+# such as the floor method
 
 from math import *
 
