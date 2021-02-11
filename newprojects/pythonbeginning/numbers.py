@@ -6,7 +6,7 @@
 from math import *
 
 
-#dfgfg
+
 
 
 # can use decimal and negative numebrs as well
