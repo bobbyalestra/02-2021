@@ -7,6 +7,6 @@ print(len(phrase))
 # how you select an index
 print(phrase[0])
 
-#to find where a speficic index is loccated
+#to find where a speficic index is loccated, add a parameter in quptes
 
-int(phrase.index())
+int(phrase.index("S"))
