@@ -21,6 +21,6 @@ print(10 % 3)
 my_num = 5
 print(my_num)
 
-#convert number to string
+#convert number to string ... to concat to a string you have to convert the number to a string first with str
 
-print(str(my_num))
+print(str(my_num) + " iss my favorite number" )
