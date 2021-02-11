@@ -9,4 +9,9 @@ print(phrase[0])
 
 #to find where a speficic index is loccated, add a parameter in quptes
 
-int(phrase.index("S"))
+print(int(phrase.index("S")))
+
+
+# there is a replace function  firsst aprameter is what you want to replace, second is what you want to change it too.
+
+print(phrase.replace("Shiot", "SHIT"))
