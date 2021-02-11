@@ -56,5 +56,10 @@ print(round(3.546))
 
 
 # to use the floor method you have to import the math functions.....see line 2
-
+# the floor grabs the lowest numb
 print(floor(3.7))
+
+
+# same with ceil must import
+#ceil grabs the highest number
+print(ceil(3.7))
