@@ -63,3 +63,7 @@ print(floor(3.7))
 # same with ceil must import
 #ceil grabs the highest number
 print(ceil(3.7))
+
+# must be imported
+#gives you the square root
+print(sqrt(35))
