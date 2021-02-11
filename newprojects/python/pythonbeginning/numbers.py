@@ -30,4 +30,8 @@ print(abs(my_num))
 
 # to raise a numebr to an exponent use the pow function first parameter is the number you want to use the power to , sencond si the power numebr
 
+
 print(pow(4,6))
+
+# the max function will tell you the highest number
+print(max(4,6))
