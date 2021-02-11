@@ -1,2 +1,2 @@
 phrase = "Bobby is the Shiot"
-print(phrase.lower())
+print(phrase.islower())
