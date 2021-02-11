@@ -25,5 +25,9 @@ print(my_num)
 
 print(str(my_num) + " iss my favorite number" )
 
-
+# abs stands for absolute value . the abouslute value of negative 5 is 5
 print(abs(my_num))
+
+# to raise a numebr to an exponent use the pow function
+
+print(pow(my_num))
