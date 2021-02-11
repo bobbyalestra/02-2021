@@ -6,3 +6,7 @@ print(len(phrase))
 
 # how you select an index
 print(phrase[0])
+
+#to find where a speficic index is loccated
+
+int(phrase.index())
