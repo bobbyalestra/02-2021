@@ -2,7 +2,7 @@
 # in able to use these function you have to import python
 # this will grab a bunch of math function that  mathw can use
 # such as the floor method
-
+# math is a module.... allows you to use more math functions
 from math import *
 
 
