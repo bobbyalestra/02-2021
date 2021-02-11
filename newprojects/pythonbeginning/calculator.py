@@ -4,6 +4,6 @@
 
 number1 = input("Enter a number")
 number2 = input("Enter a second number")
-result = number1 + number2
+result = int(number1) + int(number2)
 
 print(result)
