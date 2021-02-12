@@ -53,4 +53,12 @@ print(family)
 
 # sort puts array in alabetical order
 
-friends.sort()
+print(family.sort())
+
+#reverse puts the array in reverse
+print(;luckyNums.reverse())
+
+# the coopy method will copy the string to a variable
+family2 = friends.copy
+
+print(family2)
