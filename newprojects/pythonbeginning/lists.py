@@ -21,4 +21,6 @@ print(family[1:2])
 
 #the entend()
 
-friends.entend(luckyNums)
+family.entend(luckyNums)
+
+family.append("Cameron")
