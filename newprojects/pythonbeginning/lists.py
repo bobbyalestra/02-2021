@@ -21,7 +21,7 @@ print(family[1:2])
 
 #the entend()
 
-family.entend(luckyNums)
+print(family.extend(luckyNums))
 
 
 #    append  adds another element toi appended element
@@ -30,7 +30,22 @@ print(family)
 
 # insert takes two parameters first is the lelement you want to inserts locations , second is the element you want inserted
 
-family.insert(1,"Beatiful Baby Girl")
+print(family.insert(1,"Beatiful Baby Girl"))
 
 
+print(family)
+
+# the pop function removes the last item in the array
+
+
+print(family.pop())
+
+
+
+# index can locate a specific element
+print(family.index("BabyGirl"))
+
+
+
+# the count method
 print(family)
