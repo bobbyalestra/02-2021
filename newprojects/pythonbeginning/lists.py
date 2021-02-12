@@ -23,4 +23,14 @@ print(family[1:2])
 
 family.entend(luckyNums)
 
+
+#    append  adds another element toi appended element
 family.append("Cameron")
+print(family)
+
+# insert takes two parameters first is the lelement you want to inserts locations , second is the element you want inserted
+
+family.insert(1,"Beatiful Baby Girl")
+
+
+print(family)
