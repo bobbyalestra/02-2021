@@ -1,4 +1,6 @@
 def cube(num):
-    num * num * num
+  return  num*num*num
 
-cube(3)
+
+print(cube(3))
+
