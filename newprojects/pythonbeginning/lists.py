@@ -1,6 +1,6 @@
 
 # working with arrays
-
+luckyNums = [ 32, 26, 3]
 family = [ "Bobby", "Sammy", "Aron" ]
 print(family)
 
@@ -15,4 +15,10 @@ print(family[1])
 
 # to gab an element and switch it
 
-print(family[1:"BabyGirl"])
+family[1] = "BabyGirl"
+
+print(family[1:2])
+
+#the entend()
+
+friends.entend(luckyNums)
