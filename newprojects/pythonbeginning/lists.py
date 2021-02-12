@@ -47,5 +47,10 @@ print(family.index("BabyGirl"))
 
 
 
-# the count method
+# the count method will tell you how many times an element appears in an array
 print(family)
+
+
+# sort puts array in alabetical order
+
+friends.sort()
