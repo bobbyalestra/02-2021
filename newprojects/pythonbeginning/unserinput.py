@@ -5,3 +5,4 @@
 
 
 name = input("What is your Names?")
+print("Hello" + name + "How are you?")
