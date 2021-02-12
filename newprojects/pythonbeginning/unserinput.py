@@ -4,4 +4,4 @@
 # getting user inputs with the input function
 
 
-input("What good?")
+name = input("What is your Names?")
