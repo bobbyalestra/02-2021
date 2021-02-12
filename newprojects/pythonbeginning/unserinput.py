@@ -5,4 +5,5 @@
 
 
 name = input("What is your Names?")
-print("Hello" + name + "How are you?")
+age = input("What is your Age?")
+print("Hello" + name + "How are you?" + " You are " + age + " years old!")
