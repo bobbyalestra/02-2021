@@ -1,5 +1,5 @@
 
-
+# can also be used with strings
 
 # more work with if statements and comparisons
 
@@ -17,3 +17,6 @@ def max_num(num1, num2, num3):
         return num2
     else:
         return num3
+
+
+print(max_num(3, 40, 50))
