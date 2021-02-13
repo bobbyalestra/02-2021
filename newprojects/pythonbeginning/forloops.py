@@ -30,4 +30,7 @@ for family in family_members :
 
 print(len(family))
 
-#
+#can  find the index range of  collection as follows with index and in range
+
+for index in family_members("Mummy"):
+    print(index)
