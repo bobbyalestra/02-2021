@@ -9,6 +9,13 @@
 #
 #
 
+family_members = ["Daddy", "Mummy", "Cameron", "Aron", "Litte Princess"]
+
 
 for letter in "BabyGirl" :
     print(letter)
+
+
+
+for family in family_members :
+    print(family)
