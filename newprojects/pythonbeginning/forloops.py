@@ -25,5 +25,5 @@ for family in family_members :
 
 # index in range() will print out each number not ten
 # can add two parameter 3, 10
-for index in range(10):
+for index in range(3, 10):
     print(index)
