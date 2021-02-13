@@ -18,8 +18,9 @@ monthConversion = {
     "Sept": "September",
     "Oct" : "October",
     "Nov" : "Novemeber",
-    "Dec" : "Decemeber"
-
+    "Dec" : "Decemeber",
+# Can also store Number types 
+    5 : "Days"
 }
 
 
