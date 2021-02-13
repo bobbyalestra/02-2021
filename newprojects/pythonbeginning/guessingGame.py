@@ -10,4 +10,5 @@ guess = ""
 
 
 while guess != secret_word:
-    guess = input("Enter Guess")
+    guess = input("Enter Guess : ")
+print("You Win")
