@@ -33,5 +33,12 @@ print(len(family))
 #can  find the index range of  collection as follows with index and in range
 
 for index in range(len(family)):
-    print(family)
     print(family[index])
+
+print(family)
+
+
+
+for index in range(5):
+    if index == 0:
+        print("first itteration")
