@@ -11,7 +11,10 @@
 # add a guess limit variable
 # create another varibale called out of guess...a boolean value so if its true the are out of guesses false equals ore chances
 # add an if statement inside of the while loop to check first to see if they are out of chances by making the condition if guess count is less than count limit
+# check for proper indentation!
+# finish with an else statement t equal out of guesses = true
 
+#finish it by adding to the while loop guess not equal to secret word and not out of guesses to make it run all the conditions
 secret_word = "BabyGirl"
 guess = ""
 guess_count = 0
@@ -20,8 +23,10 @@ out_of_guesses = True
 
 
 
-while guess != secret_word:
-    if guess_count < guess_limit 
-    guess = input("Enter Guess : ")
-    guess_count += 1
+while guess != secret_word and not out_of_guesses:
+    if guess_count < guess_limit: 
+        guess = input("Enter Guess : ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
 print("You Win")
