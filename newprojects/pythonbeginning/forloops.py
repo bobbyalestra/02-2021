@@ -38,7 +38,9 @@ for index in range(len(family)):
 print(family)
 
 
-
+# if you only wanteds to orint a range of an index
 for index in range(5):
     if index == 0:
         print("first itteration")
+    else:
+        print("Not first")
