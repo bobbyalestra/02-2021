@@ -2,7 +2,7 @@
 
 
 # key : value pairs 
-#
+
 
 
 monthConversion = {
@@ -21,3 +21,7 @@ monthConversion = {
     "Dec" : "Decemeber"
 
 }
+
+
+# to acces it key you can use bracket notation []
+print(monthConversion["Feb"])
