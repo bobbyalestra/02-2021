@@ -4,6 +4,8 @@
 # create a variable
 #initial i
 # create a while condition 
+# then tell what to do print
+# set incramator
 
 
 i = 1
