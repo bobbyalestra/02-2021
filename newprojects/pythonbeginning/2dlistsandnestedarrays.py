@@ -17,4 +17,8 @@ print(number_grid[3][0])
 
 
 for row in number_grid:
-    print(row)
+ # prints out the list as its nested   
+    #print(row)
+# will make each fist index into its own column
+    for col in row:
+        print(col)
