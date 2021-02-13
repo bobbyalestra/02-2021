@@ -25,3 +25,6 @@ monthConversion = {
 
 # to acces it key you can use bracket notation []
 print(monthConversion["Feb"])
+
+#another way is .get("key")
+print(monthConversion.get("Nov"))
