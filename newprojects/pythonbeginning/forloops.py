@@ -33,4 +33,5 @@ print(len(family))
 #can  find the index range of  collection as follows with index and in range
 
 for index in range(len(family)):
-    print(index)
+    print(family)
+    print(family[index])
