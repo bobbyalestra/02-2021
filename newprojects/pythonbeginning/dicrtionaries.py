@@ -27,4 +27,6 @@ monthConversion = {
 print(monthConversion["Feb"])
 
 #another way is .get("key")
+# .get can also set default key/value pairs using Object.get("Key", "Value")
 print(monthConversion.get("Nov"))
+print(monthConversion.get("Sammy", "BabyGirl"))
