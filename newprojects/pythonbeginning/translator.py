@@ -10,5 +10,6 @@ def translate(phrase):
         if letter in "AEIOUaeiou":
             translation = translation + "B"
         else:
-            translation =  translattion + letter
+            translation =  translation + letter
         return translate
+print(translate(input("Enter A Phrase")))
