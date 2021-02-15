@@ -16,6 +16,7 @@
 # by adding the try and indenting the variable and function it can execute the code and if it doesnt work nott give a throw error
 
 try:
+    value = 10/0
     numbers = int(input("Enter A Number: "))
     print(numbers)
 except:
