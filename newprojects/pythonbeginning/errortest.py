@@ -6,8 +6,10 @@
 
 #trying to set the number variable to an integer input
 # like this it will throw an error if you enter a letter
-number = int(input("Enter A Number: "))
-print(number)
+
+
+#number = int(input("Enter A Number: "))
+#print(number)
 
 
 
