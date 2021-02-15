@@ -11,7 +11,7 @@ print(number)
 
 
 
-# by adding the try and indenting the variable and function it 
+# by adding the try and indenting the variable and function it can execute the code and if it doesnt work nott give a throw error
 
 try:
     numbers = int(input("Enter A Number: "))
