@@ -19,5 +19,10 @@ try:
     value = 10/0
     numbers = int(input("Enter A Number: "))
     print(numbers)
-except:
+
+
+# adding as can assign it as a variable
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
     print("Invalid Input")
