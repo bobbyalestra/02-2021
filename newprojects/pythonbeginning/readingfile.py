@@ -28,6 +28,17 @@
 
 employee_file = open("employees.txt", "r")
 
+
+# can create a for loop to cycle through the lines array
+for employee in employee_file.readlines():
+
+
+# read lines will add them all in an array can use bracket notation to specify index
+    print(employee_file.readlines())
+
+
+
+
 #check to see if file is readable first
 
 print(employee_file.readable())
@@ -44,8 +55,8 @@ print(employee_file.readline())
 print(employee_file.readline())
 
 
-# read lines will add them all in an array
-print(employee_file.readlines())
+
+
 
 
 
@@ -53,3 +64,4 @@ print(employee_file.readlines())
 #when you open a file you ALWAYS WANT TO CLOSE IT
 
 
+employee_file.close()
