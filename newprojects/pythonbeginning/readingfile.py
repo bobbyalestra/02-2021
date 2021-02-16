@@ -10,3 +10,11 @@ open("employees.txt", "r")
 
 #second mode is write "w" to write to the file
 open("employees.txt", "w")
+
+
+# third way is apeend "a" to add to the specific file at the end, cant mmodify or change
+open("employees.txt", "a")
+
+
+# fourth is r+ giving you the ability to read an write
+open("employees.txt", "r+")
