@@ -18,8 +18,8 @@
 
 
 # using the write function will only add what you put in
-
-employee_file = open("employees.txt", "a" )
+# add 1 to creagte a new file
+employee_file = open("employees1.txt", "w" )
 
 
 # \n so you can get it on a new line
