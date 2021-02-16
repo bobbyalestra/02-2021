@@ -19,6 +19,9 @@
 
 # using the write function will only add what you put in
 # add 1 to creagte a new file
+# has potential to write html inside write function
+
+
 employee_file = open("employees1.txt", "w" )
 
 
