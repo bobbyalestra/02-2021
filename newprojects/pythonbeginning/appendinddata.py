@@ -1,9 +1,13 @@
 
 # learning how to append to a file in Python
 
-employee_file = open("employees.txt", "r" )
+# change the mode to a
 
-print(employee_file.read())
+employee_file = open("employees.txt", "a" )
+
+
+# \n so you can get it on a new line
+employee_file.write("\nSammy - Customer Service")
 
 
 
