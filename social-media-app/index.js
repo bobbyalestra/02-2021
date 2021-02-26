@@ -1,5 +1,6 @@
 const { ApolloServer } = require('apollo-server');
 const gql = require('graphql-tag');
+const mongoose = require('mongoose');
 
 // create a type degfs to long the contents of the Query you are trying to restore
 // make it a const variable ann do as follows for which type, the ! makes its it a requirement
@@ -25,6 +26,10 @@ const server = new ApolloServer({
     typeDefs,
     resolvers
 });
+
+// next we need to connect to mongoDB using mongoose.connect()
+
+mongoose.connect()
 
 
 
