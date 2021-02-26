@@ -27,7 +27,7 @@ const server = new ApolloServer({
     resolvers
 });
 
-// next we need to connect to mongoDB using mongoose.connect()
+// next we need to connect to mongoDB using mongoose.connect("Connection String Here") and get the cpnnection string
 
 mongoose.connect()
 
