@@ -1,7 +1,7 @@
 
 
 
-const user = require('../../models/user');
+const user = require('../../models/User');
 const postsResolvers = require('./posts');
 const usersResolvers = require('./users');
 
