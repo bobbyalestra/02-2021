@@ -703,20 +703,20 @@ document.addEventListener('DOMContentLoaded',()  => {
 
 
 
-let navBarDiv = document.createElement('div');
-navBarDiv.id = "divNavBar";
-// navBarDiv.innerText = "test"
-document.body.appendChild(navBarDiv);
+// let navBarDiv = document.createElement('div');
+// navBarDiv.id = "divNavBar";
+// // navBarDiv.innerText = "test"
+// document.body.appendChild(navBarDiv);
 
-let homeButton = document.createElement('button');
-homeButton.id = "homeButtonId";
-homeButton.innerHTML = "Home";
-navBarDiv.appendChild(homeButton);
+// let homeButton = document.createElement('button');
+// homeButton.id = "homeButtonId";
+// homeButton.innerHTML = "Home";
+// navBarDiv.appendChild(homeButton);
 
-let aboutMe = document.createElement('button');
-aboutMe.id = 'aboutUs';
-aboutMe.innerHTML = 'About Me';
-navBarDiv.appendChild(aboutMe);
+// let aboutMe = document.createElement('button');
+// aboutMe.id = 'aboutUs';
+// aboutMe.innerHTML = 'About Me';
+// navBarDiv.appendChild(aboutMe);
 
 
 
@@ -727,7 +727,9 @@ navBarDiv.appendChild(aboutMe);
     document.body.appendChild(h1);
 
     let div0 = document.createElement('div');
-    
+     div0.id = 'zeroDiv';
+    div0.appendChild
+
 
     let div1 =document.createElement('div');
     div1.id = 'firstDiv';
@@ -1310,10 +1312,13 @@ const totalsNew = [];
         let addToNutlist = document.getElementById('nutInputLog');
         let displayNutLog =  '<li>' + " Amount of " +  proteinInputLI  +  " grams of protein " + ", " + nutCarbsLI  +  " grams of Carbs Fats " +  ' , ' + transFatInputLI  +  " grams of Trans Fats " + " , " + fatInputLI  +  " grams of Fats " + '</li>';
         document.getElementById('nutButtLI').innerHTML += displayNutLog;
-
+    
         console.log(fatInputLI)
     });
-
+    proteinInputLI.placeholder = 'Enter Protein'
+        nutCarbsLI.placeholder = ' Enter Carbs'
+        transFatInputLI.placeholder = 'Enter Trans Fat'
+        fatInputLI.placeholder = ' Enter Fats'
 });
 function myFunction(x) {
   x.classList.toggle("change");
