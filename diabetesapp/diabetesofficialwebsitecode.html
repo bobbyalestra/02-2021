@@ -6,8 +6,10 @@
     <title>Document</title>
     <style>
 
-            
-    
+.div{
+  color: slategrey;
+}
+ 
 #firstButton {
 display:inline-block;
 padding:0.7em 1.4em;
@@ -724,12 +726,16 @@ navBarDiv.appendChild(aboutMe);
     h1.innerHTML = 'Diabetic Insulin Calculator';
     document.body.appendChild(h1);
 
+    let div0 = document.createElement('div');
+    
+
     let div1 =document.createElement('div');
     div1.id = 'firstDiv';
     document.body.appendChild(div1);
     
     let div4 = document.createElement('div');
     div4.id = 'fourthDiv';
+    div4.className = 'div'
     document.body.appendChild(div4);
 
     let h2 = document.createElement('h2');
@@ -745,34 +751,42 @@ navBarDiv.appendChild(aboutMe);
 
      let div2 = document.createElement('div');
     div2.id = 'secondDiv';
+    div2.className = 'div'
     document.body.appendChild(div2);
 
     let div3 = document.createElement('div');
     div3.id = 'thirdDiv';
+    div3.className = 'div'
     document.body.appendChild(div3);
 
     let div5 = document.createElement('div');
     div5.id = 'fifthDiv';
+    div5.className = 'div'
     document.body.appendChild(div5);
 
     let div6 = document.createElement('div');
     div6.id = 'sixthDiv';
+    div6.className = 'div'
     document.body.appendChild(div6);
    
     let div7 = document.createElement('div');
     div7.id = 'seventhDiv';
+    div7.className = 'div'
     document.body.appendChild(div7);
 
     let div8 = document.createElement('div');
     div8.id = 'eighthDiv';
+    div8.className = 'div'
     document.body.appendChild(div8)
     
     let div9 = document.createElement('div');
     div9.id = 'ninethDiv';
+    div9.className = 'div'
     document.body.appendChild(div9)
 
     let div10 = document.createElement('div');
-    div10.id = 'tenthDiv'; 
+    div10.id = 'tenthDiv';
+    div10.className = 'div' 
     document.body.appendChild(div10)
     
 
@@ -1095,7 +1109,7 @@ navBarDiv.appendChild(aboutMe);
         document.getElementById('foodLi').innerHTML += returnCover + ' Cover Amount' 
         
      }) 
- // klj
+
     let button2 = document.createElement('button');
     button2.id = "secondButton";
     button2.innerText = "Carb Correction";
