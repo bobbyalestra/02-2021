@@ -7,7 +7,7 @@
     <style>
 
 .div{
-  color: slategrey;
+ background-color: slategrey;
 }
  
 #firstButton {
@@ -733,6 +733,7 @@ document.addEventListener('DOMContentLoaded',()  => {
 
     let div1 =document.createElement('div');
     div1.id = 'firstDiv';
+    div1.className = 'div'
     document.body.appendChild(div1);
     
     let div4 = document.createElement('div');
@@ -794,6 +795,7 @@ document.addEventListener('DOMContentLoaded',()  => {
 
     let nutritionDiv = document.createElement('div');
     nutritionDiv.id = 'nutritionalDiv';
+    nutritionDiv.className = 'div';
     document.body.appendChild(nutritionDiv);
 
     let nutritionalDivInput = document.createElement('div');
