@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- /* For mobile phones: */ -->
+
+    <style>
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .header {width: 8.33%;}
+  .header-img {width: 16.66%;}
+  .nav-bar {width: 25%;}
+  .email {width: 33.33%;}
+
+ 
+}
+</style>
+</head>
+<header id="header">
+    <img id="header-img" src="./aron.jpg">
+    <nav id="nav-bar">
+        <a href="./thing1.html" class="nav-link">Thing1</a> 
+        <a href="./thing2.html" class="nav-link">Thing2</a> 
+        <a href="./thing3.html" class="nav-link">Thing3</a> 
+    </nav>
+ </header>
+<body>
+ 
+   
+    <video width="320" height="240" controls src="https://www.youtube.com/watch?v=jjn2Kk1fIfI" type="video/mp4"> video</video>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+
+        <input id="email" type="email" placeholder="Enter Email">
+        <input type="submit" id="submit" value="Submit Things">
+
+
+    </form>
+
+
+</html>
