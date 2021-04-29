@@ -682,7 +682,7 @@ ul{
 
 
 
-        </style>98uytrdsa~
+        </style>
 </head>
 
 <body>
@@ -696,6 +696,24 @@ ul{
     <script>
 document.addEventListener('DOMContentLoaded',()  => {
 
+
+
+let mongoDBConnectionString = "mongodb+srv://Doc:Alestra1!2@@new.ffgws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+
+
+mongoose.connect(MONGODB, { useNewUrlParser: true, useUnifiedTopology: true,})
+        .then(() => {
+            console.log('MongoDB Coneccted Kidddd')
+        return server.listen({ port: 5000})
+    }) 
+        .then((res) => {
+            console.log(`server running at ${res.url}`)
+    });
+
+
+    
+
     let totalInsulinLocalStorageArray =  []
     // top make local storage yoyu must add a JON.Stringify the object and the push it to an array that the local storage callsback
     //let oldStorageArray = JSON.parse(localStorage.getItem(myStorage));
@@ -703,20 +721,6 @@ document.addEventListener('DOMContentLoaded',()  => {
 
 
 
-// let navBarDiv = document.createElement('div');
-// navBarDiv.id = "divNavBar";
-// // navBarDiv.innerText = "test"
-// document.body.appendChild(navBarDiv);
-
-// let homeButton = document.createElement('button');
-// homeButton.id = "homeButtonId";
-// homeButton.innerHTML = "Home";
-// navBarDiv.appendChild(homeButton);
-
-// let aboutMe = document.createElement('button');
-// aboutMe.id = 'aboutUs';
-// aboutMe.innerHTML = 'About Me';
-// navBarDiv.appendChild(aboutMe);
 
 
 
