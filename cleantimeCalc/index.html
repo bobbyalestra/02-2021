@@ -6,10 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    <title>Document</title>
+    
+    
 </head>
 <body>
+
+
+    <style>
+        body {
+            background-color: slategray;
+        }
+
+        #date_ini {
+            color:aqua
+        }
+
+        #date_end {
+            color:aqua
+        }
+        #days {
+            color: aqua
+        }
+
+    </style>
 
 
     <script>
@@ -27,7 +46,7 @@ function countDays() {
   document.getElementById('days').innerText = Math.floor(diff / day);
 }
     </script>
-    
+    <h1 id = 'title'> Clean Time Calc</h1>    
 
     <form name="form_main">
         <label for="date_ini">Clean Date: </label> 
