@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../angular"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
