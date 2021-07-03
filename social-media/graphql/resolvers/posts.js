@@ -1,19 +1,23 @@
 const { AuthenticationError, UserInputError, PubSub } = require("apollo-server");
-const { argsToArgsConfig } = require("graphql/type/definition");
 
 const Post = require("../../models/Post");
-const checkAuth = require("../../util/check-auth");
+const checkAuth = require('../../util/check-auth');
 
 module.exports = {
   Query: {
-    async getPosts() {
+    async getPost(_, { postId }) {
       try {
-        const post = await Post.find().sort({ createdAt: -1 });
-        return post;
+        const post = await Post.findById(postId);
+        if (post) {
+          return post;
+        } else {
+          throw new Error('Post not found');
+        }
       } catch (err) {
         throw new Error(err);
       }
-    },
+    }
+  },
 
     async getPost(_, { postId }) {
       try {
@@ -27,14 +31,14 @@ module.exports = {
         throw new Error(err);
       }
     },
-  },
+  
 
   Mutation: {
     async createdPost(_, { body }, context) {
       const user = checkAuth(context);
       console.log("user");
       
-      if(args.body.trim() === '') {
+      if(body.trim() === '') {
           throw new Error('Post body must not be blank')
       }
 
@@ -98,3 +102,8 @@ Subscription: {
     }
 }
 };
+
+
+
+
+

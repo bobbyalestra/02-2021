@@ -1,99 +1,54 @@
+const { gql } = require('apollo-server');
 
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { UserInputError } = require('apollo-server')
-
-const { validateRegisterInput, validateLoginInput } = require('../../util/validators')
-const { SECRET_KEY  } =require('../../config')
-const User = require('../../models/User')
-
-function generateToken(user){
-    return jwt.sign({
-        id: user.id,
-        email: user.email,
-        username: user.username
-    }, SECRET_KEY, { expiresIn: '1h'});
- 
-
-}
-
-module.exports = {
-    Mutation: {
-        async login(_, { username, password }){
-            const {errors, valid}  = validateLoginInput(username, password)
-
-            if(!valid){
-                throw new UserInputError('Errors', { errors });
-            }
-
-
-
-            const user = await User.findOne( { username } );
-
-            if(user){
-                errors.general = ' User not found';
-                throw new UserInputError('User Not Found', { errors });
-
-            }
-
-            const match = await bcrypt.compare(password, user.password);
-            if(math){
-                errors.general = ' Wrong Creditials';
-                throw new UserInputError('Wrong Creditials', { errors });
-
-
-            }
-
-            const token = generateToken(user);
-
-            return {
-                ...user._doc,
-                id: user._id,
-                token
-            }
-        },
-        async register(
-            _,
-            {
-                registerInput: {username, email, password, confirmedPassword}
-            },
-            ) { 
-            // TODO Validat user data
-            // make sure user doesnt already exist
-                const { valid, errors } = validateRegisterInput(username, email, password, confirmedPassword)
-                if(!valid){
-                    throw new UserInputError('Errors', { errors });
-                }
-
-                const user = await User.findOne({ username });
-                if(user) {
-                    throw new UserInputError('Username is Already Taken', {
-                        errors: {
-                            username: 'This username is already taken sorry'
-                        }
-                    })
-                }
-
-                password = await bcrypt.hash(password, 12);
-
-                const newUser = new User ({
-                    email,
-                    username,
-                    password,
-                    createdAt: new Date().toISOString()
-                });
-
-                const res = await newUser.save();
-
-                const token = generateToken(res)
-    
-                return {
-                    ...res._doc,
-                    id: res._id,
-                    token
-                }
-}
-
-
-}
-}
+module.exports = gql`
+  type Post {
+    id: ID!
+    body: String!
+    createdAt: String!
+    username: String!
+    comments: [Comment]!
+    likes: [Like]!
+    likeCount: Int!
+    commentCount: Int!
+  }
+  type Comment {
+    id: ID!
+    createdAt: String!
+    username: String!
+    body: String!
+  }
+  type Like {
+    id: ID!
+    createdAt: String!
+    username: String!
+  }
+  type User {
+    id: ID!
+    email: String!
+    token: String!
+    username: String!
+    createdAt: String!
+  }
+  input RegisterInput {
+    username: String!
+    password: String!
+    confirmPassword: String!
+    email: String!
+  }
+  type Query {
+    getPosts: [Post]
+    getPost(postId: ID!): Post
+  }
+  type Mutation {
+    register(registerInput: RegisterInput): User!
+    login(username: String!, password: String!): User!
+    createPost(body: String!): Post!
+    deletePost(postId: ID!): String!
+    createComment(postId: String!, body: String!): Post!
+    deleteComment(postId: ID!, commentId: ID!): Post!
+    likePost(postId: ID!): Post!
+  }
+  type Subscription {
+    newPost: Post!
+  }
+`;
